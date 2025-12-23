@@ -7,8 +7,77 @@
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".MainActivity">
-    
-    <!-- 这里是你完整的布局代码 -->
-    ...
-    
+
+    <!-- 标题 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="远程拍照控制"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="20dp" />
+
+    <!-- IP地址输入 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="服务器IP地址："
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etServerIp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="例如：192.168.1.100"
+        android:text="等待A同学提供IP"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 连接测试按钮 -->
+    <Button
+        android:id="@+id/btnTestConnection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试连接"
+        android:textSize="16sp"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="32dp" />
+
+    <!-- 拍照按钮（大而醒目） -->
+    <Button
+        android:id="@+id/btnCapture"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="📸 拍 照"
+        android:textSize="24sp"
+        android:background="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- 状态显示区域 -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="状态：等待连接..."
+        android:textSize="14sp"
+        android:padding="16dp"
+        android:background="#F5F5F5"
+        android:layout_marginTop="10dp" />
+
+    <!-- 加载进度条（拍照时显示） -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="20dp" />
+
 </LinearLayout>

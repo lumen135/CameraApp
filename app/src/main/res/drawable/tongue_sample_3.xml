@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- 淡黄色圆形（代表齿痕舌） -->
+    <solid android:color="#FFECB3"/>
+    <stroke
+        android:width="2dp"
+        android:color="#FFB300"/>
+    <size
+        android:width="100dp"
+        android:height="60dp"/>
+</shape>
